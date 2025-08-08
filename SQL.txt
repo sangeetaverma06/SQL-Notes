@@ -30,6 +30,22 @@
   --  order by order_id asc 
 
 
+--Get the full names of customers along with their ordered items.
+
+--select cust.first_name, cust.last_name, ord.item from 
+--customers as cust 
+--join Orders as ord
+--on cust.customer_id = ord.customer_id
+
+--select cust.first_name, cust.country, ord.order_id, ord.item, ord.amount, ord.customer_id  from customers as cust 
+--left join orders as ord
+--on cust.customer_id = ord.customer_id
+
+--select c.*, sh.status
+--from customers as c
+--left join Shippings as sh
+--on c.customer_id = sh.customer
+
 --select customer_id	,first_name,	last_name	,age	,country,status
 --from Customers as c
 --join shippings as s 
@@ -69,3 +85,6 @@ shipping_id	   status	  customer
 3	          Delivered	      3
 4	          Pending	      5
 5	          Delivered	      1
+
+
+
